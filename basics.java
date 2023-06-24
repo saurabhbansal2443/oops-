@@ -38,4 +38,11 @@ class Student { // custom student class
     void details(String collegeName){
          System.out.println("Student name is " + name + " age " + age + "  college name " + collegeName);
     }
+
+     void details(String collegeName , int year ){
+         System.out.println("Student name is " + name + " age " + age + "  college name " + collegeName);
+    }
+
+
+   
 }
