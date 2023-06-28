@@ -7,7 +7,7 @@ public class inheritance {
 
        Employe e1=new Employe();
 
-       System.out.println(e1.age);
+       //System.out.println(e1.age);
 
        e1.name="Harish";
        e1.age=20;
@@ -16,6 +16,8 @@ public class inheritance {
        e1.salary=14;
 
        //e1.timing();
+
+       e1.walk(20);
    } 
 }
 
@@ -26,8 +28,14 @@ class Employe extends Person{
     int salary;
 
     void timing(){
-      System.out.print(name+" " + age + companyName + " office timing is 9Am" );
+      System.out.println(name+" " + age + companyName + " office timing is 9Am" );
     }
+
+    void walk(){
+        System.out.println(name +" is walking in " + companyName);
+    }
+
+    
 }
 
 class Person{
@@ -36,6 +44,10 @@ class Person{
 
     void walk(){
         System.out.println(name + " is walking ");
+    }
+
+    void walk(int steps){
+        System.out.println(name + " is walking " +steps );
     }
 
     void eat(){

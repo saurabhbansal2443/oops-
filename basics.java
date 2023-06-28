@@ -31,15 +31,18 @@ class Student { // custom student class
     String number;
     String course;
 
+
+    // this is the example of polymorphism 
+
     void details(){  //method 
         System.out.println("Student name is " + name + " age " + age);
     }
 
-    void details(String collegeName){
+    void details(String collegeName){  // this is called method overlaoding 
          System.out.println("Student name is " + name + " age " + age + "  college name " + collegeName);
     }
 
-     void details(String collegeName , int year ){
+     void details(String collegeName , int year ){  // this is called method overloading 
          System.out.println("Student name is " + name + " age " + age + "  college name " + collegeName);
     }
 
